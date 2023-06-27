@@ -1,0 +1,97 @@
+/* .all_card {
+  display: flex;
+  flex-direction: row;
+  margin: 0px 10px 5px 200px;
+}
+.card {
+  margin: 10px;
+} */
+
+.container {
+  max-width: 800px;
+  margin: 5px auto;
+  text-align: center;
+  padding: 10px;
+  text-transform: uppercase;
+}
+p {
+  font-size: 15px;
+}
+.mem_title {
+  text-decoration: underline;
+}
+.mem_para {
+  margin-bottom: 10px;
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: larger;
+  text-transform: none;
+}
+.all_card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.card {
+  width: 18rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-bottom: 15px;
+}
+
+.gym_package {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.card-title {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-text ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.card-text ul li {
+  /* margin-bottom: 5px;
+  justify-content: center;
+  align-items: center; */
+  margin-bottom: 10px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  border-color: #007bff;
+  margin-top: auto;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+  border-color: #0056b3;
+}
+
+.btn-primary:focus {
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+  outline: none;
+}

@@ -1,0 +1,29 @@
+/* Navbar.css */
+.navbar {
+  background-color: black;
+  width: 100%;
+}
+
+.navbar-brand img {
+  height: 60px;
+  width: auto;
+  border-radius: 10px;
+  margin: 5px 80px;
+}
+
+/* .navbar-brand img {
+  height: 50px;
+  border: none;
+  border-radius: 5px;
+} */
+
+.navbar-nav .nav-link {
+  color: white;
+  font-size: 18px;
+  margin: 20px;
+
+  align-items: center;
+  display: flex;
+
+  align-items: center;
+}
