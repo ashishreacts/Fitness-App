@@ -41,7 +41,7 @@ const Modal = () => {
       {showModal && (
         <>
           <div className="modal-wrapper" onClick={closeModal}></div>
-          <div className="modal-container">
+          <div className="modal-container" style={{ width: "350px" }}>
             <form onSubmit={dataChangeHandler}>
               <h2 className="modal-h2">Inquiry Form</h2>
               <label htmlFor="name" className="name">

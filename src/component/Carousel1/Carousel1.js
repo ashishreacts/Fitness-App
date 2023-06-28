@@ -7,41 +7,15 @@ const Carousel1 = () => {
   return (
     <div>
       <div
-        style={{
-          overflowY: "hidden",
-          // border: "2px solid black",
-          maxWidth: "1000px",
-          marginLeft: "190px",
-        }}
         id="carouselExampleAutoplaying"
-        className="carousel slide"
+        className="carousel1-slide slide"
         data-bs-ride="carousel"
       >
-        <h2 style={{ margin: "10px 350px" }}>Customer Review</h2>
+        <h2 className="carousel1-slide-h2">Customer Review</h2>
         <div className="carousel-inner">
           <div className="carousel-item active">
-            <img
-              src={myImage1}
-              className="review-img"
-              style={{
-                width: "200px",
-                height: "200px",
-                borderRadius: "100px",
-                margin: "10px 378px",
-              }}
-              alt="..."
-            />
-            <p
-              style={{
-                fontSize: "20px",
-                fontFamily: "Arial, sans-serif",
-                color: "#333",
-                lineHeight: "1.5",
-                margin: "10px 100px",
-                textAlign: "justify",
-                textTransform: "none",
-              }}
-            >
+            <img src={myImage1} className="carousel-item-img" alt="..." />
+            <p className="carousel-item-p">
               "I've been a member of this gym for over a year now, and I
               couldn't be happier with my experience. The facility is clean,
               spacious, and well-equipped with a variety of machines and free
@@ -50,28 +24,8 @@ const Carousel1 = () => {
             </p>
           </div>
           <div className="carousel-item">
-            <img
-              src={myImage2}
-              className="review-img"
-              style={{
-                width: "200px",
-                height: "200px",
-                borderRadius: "100px",
-                margin: "10px 378px",
-              }}
-              alt="..."
-            />
-            <p
-              style={{
-                fontSize: "20px",
-                fontFamily: "Arial, sans-serif",
-                color: "#333",
-                lineHeight: "1.5",
-                margin: "10px 100px",
-                textAlign: "justify",
-                textTransform: "none",
-              }}
-            >
+            <img src={myImage2} className="carousel-item-img" alt="..." />
+            <p className="carousel-item-p">
               One thing that sets this gym apart is the wide range of classes
               they offer. From yoga and spin to high-intensity interval
               training, there's something for everyone. The instructors are
@@ -81,28 +35,8 @@ const Carousel1 = () => {
             </p>
           </div>
           <div className="carousel-item">
-            <img
-              src={myImage3}
-              className="review-img"
-              style={{
-                width: "200px",
-                height: "200px",
-                borderRadius: "100px",
-                margin: "10px 378px",
-              }}
-              alt="..."
-            />
-            <p
-              style={{
-                fontSize: "20px",
-                fontFamily: "Arial, sans-serif",
-                color: "#333",
-                lineHeight: "1.5",
-                margin: "10px 100px",
-                textAlign: "justify",
-                textTransform: "none",
-              }}
-            >
+            <img src={myImage3} className="carousel-item-img" alt="..." />
+            <p className="carousel-item-p">
               I've been a member of this gym for several months now, and I
               couldn't be more thrilled with the experience. The gym offers
               state-of-the-art equipment that caters to all types of workouts
