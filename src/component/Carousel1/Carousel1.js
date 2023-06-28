@@ -40,7 +40,6 @@ const Carousel1 = () => {
                 margin: "10px 100px",
                 textAlign: "justify",
                 textTransform: "none",
-                fontFamily: "Times in New Roman",
               }}
             >
               "I've been a member of this gym for over a year now, and I
@@ -71,7 +70,6 @@ const Carousel1 = () => {
                 margin: "10px 100px",
                 textAlign: "justify",
                 textTransform: "none",
-                fontFamily: "Times in New Roman",
               }}
             >
               One thing that sets this gym apart is the wide range of classes
@@ -103,7 +101,6 @@ const Carousel1 = () => {
                 margin: "10px 100px",
                 textAlign: "justify",
                 textTransform: "none",
-                fontFamily: "Times in New Roman",
               }}
             >
               I've been a member of this gym for several months now, and I
