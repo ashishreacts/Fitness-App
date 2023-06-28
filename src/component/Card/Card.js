@@ -19,14 +19,14 @@ export const Card = () => {
           <div className="card-body">
             <h5 className="card-title">Beginner Plan</h5>
             <p className="gym_package"> &#8377; 1000/- Month</p>
-            <p className="card-text">
-              <ul>
-                <li>Customized Diet Plans</li>
-                <li>Customized Workout Plans</li>
-                <li>Posture Correction</li>
-              </ul>
-            </p>
-            <a href="#" className="btn btn-primary">
+
+            <ul className="card-text-ul">
+              <li>Customized Diet Plans</li>
+              <li>Customized Workout Plans</li>
+              <li>Posture Correction</li>
+            </ul>
+
+            <a href="https://example.com" className="btn btn-primary">
               Get Membership
             </a>
           </div>
@@ -36,16 +36,16 @@ export const Card = () => {
           <div className="card-body">
             <h5 className="card-title">Intermediate Plan</h5>
             <p className="gym_package"> &#8377; 1500/- Month</p>
-            <p className="card-text">
-              <ul>
-                <li>Detox Drinks</li>
-                <li>Customized Diet Plans</li>
-                <li>Customized Workout Plans</li>
-                <li>Posture Correction</li>
-                <li>Supplement Guidance</li>
-              </ul>
-            </p>
-            <a href="#" className="btn btn-primary">
+
+            <ul className="card-text-ul">
+              <li>Detox Drinks</li>
+              <li>Customized Diet Plans</li>
+              <li>Customized Workout Plans</li>
+              <li>Posture Correction</li>
+              <li>Supplement Guidance</li>
+            </ul>
+
+            <a href="https://example.com" className="btn btn-primary">
               Get Membership
             </a>
           </div>
@@ -55,17 +55,17 @@ export const Card = () => {
           <div className="card-body">
             <h5 className="card-title">Ultimate Plan</h5>
             <p className="gym_package"> &#8377; 2000/- Month</p>
-            <p className="card-text">
-              <ul>
-                <li>Detox Drinks</li>
-                <li>Customized Diet Plans</li>
-                <li>Customized Workout Plans</li>
-                <li>Posture Correction</li>
-                <li>Supplement Guidance</li>
-                <li>Blood Test Guidance</li>
-              </ul>
-            </p>
-            <a href="#" className="btn btn-primary">
+
+            <ul className="card-text-ul">
+              <li>Detox Drinks</li>
+              <li>Customized Diet Plans</li>
+              <li>Customized Workout Plans</li>
+              <li>Posture Correction</li>
+              <li>Supplement Guidance</li>
+              <li>Blood Test Guidance</li>
+            </ul>
+
+            <a href="https://example.com" className="btn btn-primary">
               Get Membership
             </a>
           </div>

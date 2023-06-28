@@ -90,7 +90,9 @@ const Carousel = () => {
       <section className="about_section layout_padding">
         <div className="container">
           <div className="heading_container">
-            <h2 className="about-h2">About AJ's Fitness</h2>
+            <h2 className="about-h2" id="about-section">
+              About AJ's Fitness
+            </h2>
           </div>
           <div className="about-box">
             <div className="about-img-box">
@@ -120,7 +122,7 @@ const Carousel = () => {
 
       <section className="service_section layout_padding">
         <div className="container">
-          <div className="heading_container">
+          <div className="heading_container" id="services">
             <h2>Our Services</h2>
           </div>
           <div className="service_container">

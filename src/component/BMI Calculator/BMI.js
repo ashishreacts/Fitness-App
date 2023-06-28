@@ -28,7 +28,7 @@ const BMI = () => {
 
   return (
     <div>
-      <div className="bmi-container">
+      <div className="bmi-container" id="bmi">
         <h2 className="bmi-title">BMI Calculator</h2>
         <label htmlFor="weight">Weight (kg): </label>&nbsp;
         <input

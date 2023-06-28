@@ -5,11 +5,17 @@ import { useAuth0 } from "@auth0/auth0-react";
 
 const Navbar = () => {
   const { loginWithRedirect, isAuthenticated, logout, user } = useAuth0();
-
+  const handleNavigation = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+    }
+  };
   return (
     <div>
       <nav
         className="navbar navbar-expand-lg "
+        id="navHome"
         style={{ backgroundColor: " rgba(0, 0, 0, 0.95)" }}
       >
         <div className="container-fluid">
@@ -28,7 +34,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="navbarTogglerDemo01">
             <a
               className="navbar-brand"
-              href="#"
+              href="https://example.com"
               style={{ margin: "5px -160px 5px 5px" }}
             >
               <img
@@ -41,8 +47,12 @@ const Navbar = () => {
                 <a
                   className="nav-link active"
                   aria-current="page"
-                  href="#"
-                  style={{ color: "white", marginLeft: "100px" }}
+                  onClick={() => handleNavigation("navHome")}
+                  style={{
+                    color: "white",
+                    marginLeft: "100px",
+                    cursor: "pointer",
+                  }}
                 >
                   Home
                 </a>
@@ -50,8 +60,8 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="nav-link active"
-                  href="#"
-                  style={{ color: "white" }}
+                  onClick={() => handleNavigation("about-section")}
+                  style={{ color: "white", cursor: "pointer" }}
                 >
                   About
                 </a>
@@ -59,8 +69,8 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="nav-link active"
-                  href="#"
-                  style={{ color: "white" }}
+                  onClick={() => handleNavigation("services")}
+                  style={{ color: "white", cursor: "pointer" }}
                 >
                   Services
                 </a>
@@ -68,8 +78,8 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="nav-link active"
-                  href="#"
-                  style={{ color: "white" }}
+                  onClick={() => handleNavigation("bmi")}
+                  style={{ color: "white", cursor: "pointer" }}
                 >
                   Find BMI
                 </a>
@@ -77,8 +87,8 @@ const Navbar = () => {
               <li className="nav-item">
                 <a
                   className="nav-link active"
-                  href="#"
-                  style={{ color: "white" }}
+                  onClick={() => handleNavigation("map")}
+                  style={{ color: "white", cursor: "pointer" }}
                 >
                   Locate Us
                 </a>
