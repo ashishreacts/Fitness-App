@@ -44,7 +44,7 @@ const Navbar = () => {
             </a>
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
-                <a
+                <button
                   className="nav-link active"
                   aria-current="page"
                   onClick={() => handleNavigation("navHome")}
@@ -55,43 +55,43 @@ const Navbar = () => {
                   }}
                 >
                   Home
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a
+                <button
                   className="nav-link active"
                   onClick={() => handleNavigation("about-section")}
                   style={{ color: "white", cursor: "pointer" }}
                 >
                   About
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a
+                <button
                   className="nav-link active"
                   onClick={() => handleNavigation("services")}
                   style={{ color: "white", cursor: "pointer" }}
                 >
                   Services
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a
+                <button
                   className="nav-link active"
                   onClick={() => handleNavigation("bmi")}
                   style={{ color: "white", cursor: "pointer" }}
                 >
                   Find BMI
-                </a>
+                </button>
               </li>
               <li className="nav-item">
-                <a
+                <button
                   className="nav-link active"
                   onClick={() => handleNavigation("map")}
                   style={{ color: "white", cursor: "pointer" }}
                 >
                   Locate Us
-                </a>
+                </button>
               </li>
               {isAuthenticated && (
                 <li>
