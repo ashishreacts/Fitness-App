@@ -10,78 +10,51 @@ const Carousel = () => {
   return (
     <div>
       <div
-        id="carouselExampleIndicators"
-        className="carousel slide"
+        id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel"
         style={{ overflowY: "hidden" }}
       >
-        <div className="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="0"
-            className="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleIndicators"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div className="carousel-inner">
-          <div className="carousel-item active">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
             <img
-              src="https://t4.ftcdn.net/jpg/02/86/09/83/360_F_286098390_D2J4jLbOkCzikuSXxQBh26IxhR7t4i28.jpg"
-              className="d-block w-100"
+              src="https://e1.pxfuel.com/desktop-wallpaper/457/546/desktop-wallpaper-gym-workout-1080.jpg"
+              class="d-block w-100"
               alt="..."
             />
           </div>
-          <div className="carousel-item">
+          <div class="carousel-item">
             <img
-              src="https://w0.peakpx.com/wallpaper/315/293/HD-wallpaper-sports-weightlifting-bodybuilder-gym-man-muscle.jpg"
-              className="d-block w-100"
+              src="https://cdn.shopify.com/s/files/1/0224/6724/8200/articles/isolation_exercise.jpg?v=1592829468"
+              class="d-block w-100"
               alt="..."
             />
           </div>
-          <div className="carousel-item">
+          <div class="carousel-item">
             <img
-              src="https://img.freepik.com/free-photo/people-doing-indoor-cycling_23-2149270268.jpg"
-              className="d-block w-100"
+              src="https://assets-global.website-files.com/5e1f6851f3f22a131226c9f1/5e2b1a53941c933c27b90d33_YMCA-Fitness-Class.jpeg"
+              class="d-block w-100"
               alt="..."
             />
           </div>
         </div>
         <button
-          className="carousel-control-prev"
+          class="carousel-control-prev"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="prev"
         >
-          <span
-            className="carousel-control-prev-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Previous</span>
+          {/* <span class="carousel-control-prev-icon" aria-hidden="true"></span> */}
+          <span class="visually-hidden">Previous</span>
         </button>
         <button
-          className="carousel-control-next"
+          class="carousel-control-next"
           type="button"
-          data-bs-target="#carouselExampleIndicators"
+          data-bs-target="#carouselExampleAutoplaying"
           data-bs-slide="next"
         >
-          <span
-            className="carousel-control-next-icon"
-            aria-hidden="true"
-          ></span>
-          <span className="visually-hidden">Next</span>
+          {/* <span class="carousel-control-next-icon" aria-hidden="true"></span> */}
+          <span class="visually-hidden">Next</span>
         </button>
       </div>
 

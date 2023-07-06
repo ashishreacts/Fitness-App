@@ -1,5 +1,5 @@
 import React from "react";
-
+import "./Map.css";
 export const Map = () => {
   return (
     <div>
@@ -9,10 +9,7 @@ export const Map = () => {
         width="500"
         height="310"
         id="map"
-        style={{
-          borderRadius: "8px",
-          margin: "0px 100px",
-        }}
+        className="map_locate"
         allowFullScreen=""
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
