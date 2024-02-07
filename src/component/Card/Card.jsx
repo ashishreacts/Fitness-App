@@ -1,6 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Card.css";
-export const Card = () => {
+import { Button } from "@mui/material";
+import CardModal from "./CardModal";
+
+export const Card = ({ onOpen }) => {
+  const [isModalOpen, setModalOpen] = useState(false);
+
+  const handleOpenModal = () => {
+    setModalOpen(true);
+  };
+
+  const handleCloseModal = () => {
+    setModalOpen(false);
+  };
   return (
     <div>
       <div className="container">
@@ -15,7 +27,6 @@ export const Card = () => {
       </div>
       <div className="all_card">
         <div className="card" style={{ width: "18rem" }}>
-          {/* <img src="..." className="card-img-top" alt="..." /> */}
           <div className="card-body">
             <h5 className="card-title">Beginner Plan</h5>
             <p className="gym_package"> &#8377; 1000/- Month</p>
@@ -26,13 +37,12 @@ export const Card = () => {
               <li>Posture Correction</li>
             </ul>
 
-            <a href="https://example.com" className="btn btn-primary">
+            <Button onClick={handleOpenModal} variant="contained">
               Get Membership
-            </a>
+            </Button>
           </div>
         </div>
         <div className="card" style={{ width: "18rem" }}>
-          {/* <img src="..." className="card-img-top" alt="..." /> */}
           <div className="card-body">
             <h5 className="card-title">Intermediate Plan</h5>
             <p className="gym_package"> &#8377; 1500/- Month</p>
@@ -45,13 +55,12 @@ export const Card = () => {
               <li>Supplement Guidance</li>
             </ul>
 
-            <a href="https://example.com" className="btn btn-primary">
+            <Button onClick={handleOpenModal} variant="contained">
               Get Membership
-            </a>
+            </Button>
           </div>
         </div>
         <div className="card" style={{ width: "18rem" }}>
-          {/* <img src="..." className="card-img-top" alt="..." /> */}
           <div className="card-body">
             <h5 className="card-title">Ultimate Plan</h5>
             <p className="gym_package"> &#8377; 2000/- Month</p>
@@ -65,9 +74,10 @@ export const Card = () => {
               <li>Blood Test Guidance</li>
             </ul>
 
-            <a href="https://example.com" className="btn btn-primary">
+            <Button onClick={handleOpenModal} variant="contained">
               Get Membership
-            </a>
+            </Button>
+            <CardModal isOpen={isModalOpen} onClose={handleCloseModal} />
           </div>
         </div>
       </div>
