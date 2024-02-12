@@ -51,7 +51,7 @@ const BMI = () => {
             {({ field, meta }) => (
               <TextField
                 {...field}
-                label="Weight"
+                label="Weight:(kg)"
                 onChange={(e) => {
                   formik.handleChange(e);
                   setWeight(e.target.value);
@@ -66,7 +66,7 @@ const BMI = () => {
             {({ field, meta }) => (
               <TextField
                 {...field}
-                label="Height:(CM)"
+                label="Height:(cm)"
                 onChange={(e) => {
                   formik.handleChange(e);
                   setHeight(e.target.value);
