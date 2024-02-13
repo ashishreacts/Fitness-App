@@ -133,8 +133,11 @@ const CardModal = ({ isOpen, onClose }) => {
               variant="contained"
               onClick={() => {
                 formik.handleSubmit();
-                onClose(); 
+                onClose();
               }}
+              disabled={
+                formik.isSubmitting || !(formik.dirty && formik.isValid)
+              }
             >
               Submit
             </Button>
